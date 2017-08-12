@@ -10,6 +10,11 @@ Vue.use(MintUI)
 import './assets/reset.css'
 Vue.config.productionTip = false
 
+// 引入全局组件
+import Header from './components/common/Header.vue'
+import Footer from './components/common/Footer.vue'
+Vue.component('g-header', Header)
+Vue.component('g-footer', Footer)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
