@@ -14,7 +14,7 @@
         <mt-tab-item id="2">选项二</mt-tab-item>
         <mt-tab-item id="3">选项三</mt-tab-item>
       </mt-navbar>
-      <!-- tab切换内容 -->
+      <!-- tab-container 可以滑动的tab切换 -->
       <mt-tab-container v-model="tabSelected" swipeable>
         <mt-tab-container-item id="1">
           <mt-cell v-for="n in 10" :title="'内容 ' + n" />

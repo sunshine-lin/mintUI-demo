@@ -42,9 +42,9 @@
 		    cancel-text="取消"
 		    placeholder="搜索"
 			result="resArr"
-			show
 		    >
 		  </mt-search>
+		
 	</div>
 </template>
 <script type="text/ecmascript-6">
@@ -55,11 +55,17 @@
     		return {
     			active: 'tab-container1',
     			value: 'a',
-    			resArr: ['aaaa1','bb1112']
+    			resArr: ['aaaa1','bb1112'],
+    			switchValue: ``
     		}
     	},
     	computed: {},
     	created () {},
+    	watch: {
+    		switchValue () {
+    			console.log(this.switchValue)
+    		}
+    	},
     	mounted () {},
     	methods: {}
     }
